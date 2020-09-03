@@ -9,11 +9,10 @@
 		"command": "/usr/bin/clang++",
 		"args": [
 		  "-std=c++17",
-		  "-stdlib=libc++",
 		  "-g",
 		  "${file}",
 		  "-o",
-		  "${fileDirname}/${fileBasenameNoExtension}"
+		  "${fileDirname}/build/${fileBasenameNoExtension}"
 		],
 		"options": {
 		  "cwd": "${workspaceFolder}"
